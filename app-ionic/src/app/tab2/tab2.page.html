@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      LOGIN
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="img">
+    <img [src]="img">
+    <br>
+  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        BIENVENIDOS
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formulariologin" (submit)="login(formulariologin)">
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input formControlName="email" id="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input formControlName="password" type="password" id="password"></ion-input>
+        </ion-item>
+        <br>
+        <br>
+        <ion-button type="submit">
+          INICIAR SESION
+        </ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+  <ion-list>
+    <ion-item *ngFor= "let estudiante of  listarEstudiante">
+      <ion-label>
+        {{estudiante.Nombres}}
+        {{estudiante.Apellidos}}
+        {{estudiante.Categoria}}   
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

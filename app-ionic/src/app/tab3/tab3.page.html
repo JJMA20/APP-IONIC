@@ -1,0 +1,40 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>MENU</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    LISTA DE USUARIOS
+  </ion-content>
+</ion-menu>
+<ion-content>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+      <div class="img">
+        <img [src]="img">
+        <br>
+        <h1>
+          BIIENVENIDO
+          ADMINISTRADOR
+        </h1>
+      </div>
+    </ion-header>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar color='primary'>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['../tab2']">
+        SALIR
+        <ion-icon name="log-out-outline"></ion-icon>
+        <!-- <ion-icon name="person-add-outline"></ion-icon> -->
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

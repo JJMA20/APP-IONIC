@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>REGISTRO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        BIENVENIDOS
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]= "formularioregistro" (submit)="registro(formularioregistro)">
+        <ion-item>
+          <ion-label position="floating">Name</ion-label>
+          <ion-input formControlName="name" id="name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input formControlName="email" id="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input formControlName="password" type="password" id="password"></ion-input>
+        </ion-item>
+        <ion-button type="submit">
+          REGISTRARSE
+        </ion-button>
+      </form>
+      <br>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

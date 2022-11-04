@@ -1,0 +1,19 @@
+img{
+    width: 250px;
+    height: 250px;
+    font-size: 23px;
+    background-position: var(mycolor);
+    border-radius: 50%;
+    border: 20px solid #ffffffd9;
+    //background: linear-gradient(100deg, black, white);
+}
+.img{
+    margin-top: 30px;
+    text-align: center;
+}
+ion-content {
+    background-color: rgb(126, 12, 12);
+}
+ion-card{
+    text-align: center;
+}
